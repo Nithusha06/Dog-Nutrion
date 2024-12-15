@@ -1,0 +1,76 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ViewProductsActivity">
+
+    <!-- Toolbar with title -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:title="View Products"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Filter Section -->
+    <Spinner
+        android:id="@+id/spinnerBrand"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:entries="@array/brands"
+        android:textColor="#000066"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:entries="@array/types"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerAge"
+        app:layout_constraintStart_toEndOf="@+id/spinnerBrand"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:textColor="@android:color/black"
+        android:entries="@array/ages"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerType"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <!-- Sort Button -->
+    <Button
+        android:id="@+id/btnSort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E22666"
+        android:text="Sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBrand" />
+
+    <!-- RecyclerView for Products -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProducts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

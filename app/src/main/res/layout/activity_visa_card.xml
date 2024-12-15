@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+    android:background="#C31DCC"
+    android:elevation="4dp"
+    android:title="Visa Card"
+    android:titleTextColor="@android:color/white"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp" />
+    <!-- Card Number Input -->
+    <EditText
+        android:id="@+id/edtCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textColor="#121111"
+        android:textColorHint="#2C2B2B" />
+
+    <!-- Expiry Date Input -->
+    <EditText
+        android:id="@+id/edtExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="#121111"
+        android:textColorHint="#2C2B2B"/>
+
+    <!-- CVV Input -->
+    <EditText
+        android:id="@+id/edtCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVV"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:textColor="#121111"
+        android:textColorHint="#2C2B2B"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmitPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#1FA424"
+        android:text="Submit Payment"
+        android:textSize="16sp" />
+
+</LinearLayout>

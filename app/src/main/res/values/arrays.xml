@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Array for Spinner (Brands) -->
+    <string-array name="brands">
+        <item>Royal Canin</item>
+        <item>Pedigree</item>
+        <item>Purina</item>
+        <item>Acana</item>
+        <item>Blue Buffalo</item>
+        <item>Orijen</item>
+    </string-array>
+
+    <!-- Array for Spinner (Types) -->
+    <string-array name="types">
+        <item>Dry Food</item>
+        <item>Wet Food</item>
+        <item>Grain-Free Food</item>
+        <item>High-Protein Food</item>
+        <item>Treats</item>
+    </string-array>
+
+    <!-- Array for Spinner (Ages) -->
+    <string-array name="ages">
+        <item>Puppy (0-12 months)</item>
+        <item>Adult (1-7 years)</item>
+        <item>Senior (7+ years)</item>
+        <item>All Life Stages</item>
+    </string-array>
+</resources>

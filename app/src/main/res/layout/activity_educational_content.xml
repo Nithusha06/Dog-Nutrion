@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/edu7"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationalContentActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FF018786"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Title will be set programmatically in the Activity -->
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Button for Articles -->
+    <!-- Position from top of parent -->
+
+    <!-- Button for Videos -->
+
+    <Button
+        android:id="@+id/article_button"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#142690"
+        android:text="Articles"
+        android:textColor="#FDF7F7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/videobtn"
+        android:layout_width="267dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C1B033"
+        android:text="Videos"
+        android:textColor="#FDF7F7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_button" /> <!-- Centered horizontally -->
+
+    <!-- Button for Guides -->
+    <Button
+        android:id="@+id/Guidesbtn"
+        android:layout_width="261dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C3451E"
+        android:textColor="#FDF7F7"
+        android:textSize="16sp"
+        android:text="Guides"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videobtn" /> <!-- Centered horizontally -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

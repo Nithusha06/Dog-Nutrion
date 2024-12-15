@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#C5E6E6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView at the top -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/angkor"
+        android:text="Welcome to the App!"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Image below the TextView -->
+    <ImageView
+        android:id="@+id/topImageView"
+        android:layout_width="400dp"
+        android:layout_height="262dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Top Icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/nutrition" />
+
+    <!-- First Button -->
+    <Button
+        android:id="@+id/catalogbutton"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#751CF4"
+        android:fontFamily="@font/andika_new_basic_italic"
+        android:paddingVertical="12dp"
+        android:text="Product Catalog"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topImageView" />
+
+    <!-- Second Button -->
+    <Button
+        android:id="@+id/ShoppingCartbutton"
+        android:layout_width="269dp"
+        android:layout_height="62dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#C31DCC"
+        android:paddingVertical="12dp"
+        android:fontFamily="@font/andika_new_basic_italic"
+        android:text="Shopping Cart"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catalogbutton" />
+
+    <!-- Third Button -->
+    <Button
+        android:id="@+id/Edubutton"
+        android:layout_width="272dp"
+        android:layout_height="61dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FF018786"
+        android:paddingVertical="12dp"
+        android:fontFamily="@font/andika_new_basic_italic"
+        android:text="Educational Content"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShoppingCartbutton" />
+
+    <!-- ImageButton (Logout or Action Button) with size and color adjustment -->
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="69dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_logout"
+        android:contentDescription="Logout Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
